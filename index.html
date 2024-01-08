@@ -18,12 +18,12 @@
         <h1 class="text-uppercase text-center text-white fw-bolder mt-3">Calcola il prezzo del tuo biglietto</h1>
     </header>
 
-    <main>
-        <form class="bg-white py-4 px-5 mx-5 rounded-2 shadow-lg">
+    <main class="px-5">
+        <div id="bigliettoForm" class="bg-white py-4 px-5 rounded-2 shadow-lg mx-auto">
             <div class="d-flex justify-content-center column-gap-5">
                 <div class="d-flex flex-column row-gap-3">
                     <label for="name" class="text-center">Nome e Cognome</label>
-                    <input type="text" id="name" class="rounded border border-danger">
+                    <input type="text" id="name" class="rounded border border-danger" autocomplete="off">
                 </div>
                 <div class="d-flex flex-column row-gap-3">
                     <label for="km" class="text-center">Km da percorrere</label>
@@ -40,10 +40,10 @@
                 </div>
             </div>
             <div class="text-center mt-5">
-                <button class="me-4 ">Genera</button>
-                <button>Annulla</button>
+                <button id="generaBiglietto" class="me-4">Genera</button>
+                <button id="formattaForm">Annulla</button>
             </div>
-        </form>
+        </div>
     </main>
 
     <!-- Bootstrap js -->
