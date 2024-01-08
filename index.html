@@ -19,7 +19,7 @@
     </header>
 
     <main class="px-5">
-        <div id="bigliettoForm" class="bg-white py-4 px-5 rounded-2 shadow-lg mx-auto">
+        <div class="bg-white py-4 px-5 rounded-2 shadow-lg mx-auto bigliettoForm">
             <div class="d-flex justify-content-center column-gap-5">
                 <div class="d-flex flex-column row-gap-3">
                     <label for="name" class="text-center">Nome e Cognome</label>
@@ -42,6 +42,37 @@
             <div class="text-center mt-5">
                 <button id="generaBiglietto" class="me-4">Genera</button>
                 <button id="formattaForm">Annulla</button>
+            </div>
+        </div>
+
+        <!-- il mio biglietto  -->
+        <div id="myTicket" class="d-none">
+            <h2 class="text-uppercase text-center text-white fw-bolder mt-3">il tuo biglietto</h2>
+            <div class="bigliettoForm mx-auto bg-white p-3 ">
+                <h3 class="text-uppercase  fw-bold">dettaglio passeggeri</h3>
+                <div>
+                    <table class="table table-borderless border">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="fs-4 text-uppercase fw-bolder">Nome passeggero</th>
+                            <th scope="col">Offerta</th>
+                            <th scope="col">Carrozza</th>
+                            <th scope="col">Codice CP</th>
+                            <th scope="col">Costo Biglietto</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th id="nomeBiglietto" class=" fs-4"></th>
+                            <td id="offerta"></td>
+                            <td id="carrozza"></td>
+                            <td id="codiceCP"></td>
+                            <td id="costoBiglietto"></td>
+                          </tr>
+                              
+                        </tbody>
+                      </table>
+                </div>
             </div>
         </div>
     </main>
