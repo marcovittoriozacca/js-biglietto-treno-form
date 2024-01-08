@@ -22,17 +22,17 @@
         <div class="bg-white py-4 px-5 rounded-2 shadow-lg mx-auto bigliettoForm">
             <div class="d-flex justify-content-center column-gap-5">
                 <div class="d-flex flex-column row-gap-3">
-                    <label for="name" class="text-center">Nome e Cognome</label>
-                    <input type="text" id="name" class="rounded border border-danger" autocomplete="off">
+                    <label for="name" class="text-center fw-bold text-danger ">Nome e Cognome</label>
+                    <input type="text" id="name" class="rounded border border-danger" autocomplete="on">
                 </div>
                 <div class="d-flex flex-column row-gap-3">
-                    <label for="km" class="text-center">Km da percorrere</label>
-                    <input type="text" id="km" class="rounded border border-danger">
+                    <label for="km" class="text-center fw-bold text-danger ">Km da percorrere</label>
+                    <input type="number" id="km" min="1" autocomplete="off" class="rounded border border-danger">
                 </div>
     
                 <div class="d-flex flex-column row-gap-3">
-                    <label for="eta" class="text-center">Fascia d'età</label>
-                    <select name="etaPsg" id="eta" class="rounded border border-danger">
+                    <label for="eta" class="text-center fw-bold text-danger ">Fascia d'età</label>
+                    <select name="etaPsg" id="eta" class="rounded border border-danger p-1">
                         <option value="minorenne">Bambino</option>
                         <option value="maggiorenne">Adulto</option>
                         <option value="over65">Over 65</option>
@@ -40,15 +40,15 @@
                 </div>
             </div>
             <div class="text-center mt-5">
-                <button id="generaBiglietto" class="me-4">Genera</button>
-                <button id="formattaForm">Annulla</button>
+                <button id="generaBiglietto" class="me-4 btn btn-danger">Genera</button>
+                <button id="formattaForm" class="btn border border-black ">Annulla</button>
             </div>
         </div>
 
         <!-- il mio biglietto  -->
         <div id="myTicket" class="d-none">
-            <h2 class="text-uppercase text-center text-white fw-bolder mt-3">il tuo biglietto</h2>
-            <div class="bigliettoForm mx-auto bg-white p-3 ">
+            <h2 class="text-uppercase text-center text-white fw-bolder mt-5 mb-4 ">il tuo biglietto</h2>
+            <div class="bigliettoForm mx-auto bg-white p-3 rounded-2 shadow-lg">
                 <h3 class="text-uppercase  fw-bold">dettaglio passeggeri</h3>
                 <div>
                     <table class="table table-borderless border">
@@ -63,7 +63,7 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <th id="nomeBiglietto" class=" fs-4"></th>
+                            <th id="nomeBiglietto" class="fs-4"></th>
                             <td id="offerta"></td>
                             <td id="carrozza"></td>
                             <td id="codiceCP"></td>
